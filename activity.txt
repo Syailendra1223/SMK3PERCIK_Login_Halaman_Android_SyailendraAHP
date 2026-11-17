@@ -1,0 +1,10 @@
+Diagram ini dibagi menjadi dua bagian utama (swimlane):User (Sisi Pengguna): Menunjukkan tindakan atau interaksi yang dilakukan oleh pengguna.
+System (Sisi Sistem): Menunjukkan proses atau tampilan yang dieksekusi di balik layar oleh aplikasi.
+Penjelasan Alur Proses (Step-by-Step)Mulai & Membuka Aplikasi:Alur dimulai dari titik awal (lingkaran hitam) di sisi user saat pengguna membuka aplikasi (open application). 
+Sistem merespons tindakan ini dengan memuat tampilan login (login view) dan menampilkan formulir login ke hadapan pengguna (Display the login form).
+Pengecekan Status Akun (already have account?):Pengguna dihadapkan pada sebuah keputusan (decision node) apakah sudah memiliki akun atau belum.
+Jika Belum (No): Pengguna diarahkan ke halaman registrasi oleh sistem (list/registration view). Pengguna mengisi data diri (fill data) lalu memasukkan username dan password baru.
+Jika Sudah (yes): Pengguna dapat langsung memasukkan username dan password yang sudah dimiliki (enter username/password).
+Verifikasi Data (check username and password):Setelah data username dan password dimasukkan oleh pengguna, sistem memprosesnya dan memeriksa validitas data tersebut (check username and password).
+Keputusan Hasil Verifikasi (succeed):Jika Gagal (NO): Sistem menyatakan login gagal dan mengarahkan kembali alur ke tampilan login awal (login view) agar pengguna bisa mencoba ulang.
+Jika Berhasil (yes): Sistem melanjutkan proses dengan menampilkan menu utama aplikasi (display menu) kepada pengguna, dan alur selesai ditandai dengan lingkaran akhir (titik dikelilingi lingkaran ganda).
